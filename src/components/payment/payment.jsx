@@ -7,14 +7,16 @@ const Payment = () => {
       <div className='payment-title'> TITLE</div>
       <form className='payment-form' action=''>
         <div className='customer-information'>
-          <div>customer information</div>
-          <div>field marked as </div>
-          <div>
-            <input type='text' />
-            <input type='text' />
+          <div className='customer-information-title'>
+            <div>Customer Information</div>
+            <span>Fields marked as (*) are required.</span>
           </div>
-          <div>
-            <input type='text' />
+          <div className='first-last-names'>
+            <input placeholder='*First name' type='text' />
+            <input placeholder='*Last name' type='text' />
+          </div>
+          <div className='email-input'>
+            <input placeholder='*Email' type='text' />
           </div>
         </div>
 
