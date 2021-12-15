@@ -1,0 +1,19 @@
+.payment-container {
+  .payment-title {
+    // background-color: fuchsia;
+  }
+  .payment-form {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    .customer-information {
+      background-color: gainsboro;
+      display: flex;
+      flex-direction: column;
+    }
+    .shipping-adress {
+      background-color: honeydew;
+    }
+  }
+}

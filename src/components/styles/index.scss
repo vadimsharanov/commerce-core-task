@@ -17,20 +17,11 @@ code {
 body {
   background: linear-gradient(
     to right,
-    #999999 0%,
-    #999999 60%,
+    #f8f1eb 0%,
+    #f8f1eb 60%,
     #fff 50%,
     #fff 100%
   );
-}
-.col-12 {
-  border: 2px solid black;
-}
-.row-1 {
-  background-color: yellow;
-}
-.row-2 {
-  background-color: blue;
 }
 .container {
   .row {
