@@ -14,23 +14,28 @@ code {
     monospace;
 }
 
-/* .container {
+body {
   background: linear-gradient(
     to right,
-    #ffffff 0%,
-    #ffffff 50%,
-    #000000 50%,
-    #000000 100%
+    #999999 0%,
+    #999999 60%,
+    #fff 50%,
+    #fff 100%
   );
-} */
-
-.kol-1 {
+}
+.col-12 {
+  border: 2px solid black;
+}
+.row-1 {
   background-color: yellow;
 }
-.kol-2 {
+.row-2 {
   background-color: blue;
 }
-.kol-3 {
-  background-color: red;
-  /* height: 100vh; */
+.container {
+  .row {
+    .total-container {
+      grid-column-start: 10;
+    }
+  }
 }
