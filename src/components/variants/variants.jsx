@@ -8,7 +8,7 @@ const products =
 const Variants = () => {
   return (
     <div className='variants-container'>
-      <div className='variants-title'>Title</div>
+      <div className='variants-title'>Variants</div>
       <div className='variants-box'>
         <div className='variants-dropdown'>
           <div className='variants-dropdown-left-side'>
@@ -17,7 +17,7 @@ const Variants = () => {
           </div>
           <div className='variants-dropdown-right-side'>
             <span>Change</span>
-            <span>&#8250;</span>
+            <div className='change-arrow'>&#8250;</div>
           </div>
         </div>
         <div className='variants-dropdown-content'>

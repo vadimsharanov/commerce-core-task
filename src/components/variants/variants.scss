@@ -3,33 +3,41 @@
     background-color: aqua;
   }
   .variants-box {
+    padding: 24px;
     background-color: #fff;
-    .variants-dropdown {
+    border: solid 1px blueviolet;
+
+    .variants-dropdown,
+    .variants-dropdown-content-single {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      .variants-dropdown-left-side {
+      .variants-dropdown-right-side {
         display: flex;
         flex-direction: row;
         align-items: center;
-      }
-      .variants-dropdown-right-side {
+        gap: 5px;
+        .change-arrow {
+          transform: rotate(-90deg);
+          font-size: 30px;
+          display: flex;
+          background-color: crimson;
+          align-items: center;
+        }
       }
     }
     .variants-dropdown-content {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      .variants-dropdown-content-single {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        .variants-dropdown-left-side {
-          display: flex;
-          align-items: center;
-        }
-      }
     }
   }
+}
+
+// here, because style is taken for several elements
+.variants-dropdown-left-side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
