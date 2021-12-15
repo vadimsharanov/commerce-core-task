@@ -8,7 +8,7 @@ const Payment = () => {
       <form className='payment-form' action=''>
         <div className='customer-information'>
           <div className='customer-information-title'>
-            <div>Customer Information</div>
+            <div className='form-title'>Customer Information</div>
             <span>Fields marked as (*) are required.</span>
           </div>
           <div className='first-last-names'>
@@ -21,12 +21,12 @@ const Payment = () => {
         </div>
 
         <div className='shipping-adress'>
-          <div>shipping adress</div>
+          <div className='form-title'>Shipping Adress</div>
           <div>
-            <input type='text' />
+            <input placeholder='*Adress' type='text' />
           </div>
           <div>
-            <input type='text' />
+            <input placeholder='*City' type='text' />
           </div>
           <div>
             <span>dropdown</span>

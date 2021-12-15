@@ -8,24 +8,24 @@
     flex-direction: column;
     gap: 15px;
     padding: 24px;
-    .customer-information {
+    .customer-information,
+    .shipping-adress {
       display: flex;
       flex-direction: column;
       gap: 16px;
+      div {
+        display: flex;
+      }
       .customer-information-title {
         display: flex;
         flex-direction: column;
         gap: 5px;
-        div {
-          font-size: 14px;
-          font-weight: 550;
-          font-family: system-ui;
-          line-height: 1.4;
-        }
+
         span {
           font-size: 12px;
           font-family: roboto;
           line-height: 16px;
+          font-weight: 550;
           color: #bdbdbd;
         }
       }
@@ -38,7 +38,6 @@
       }
     }
     .shipping-adress {
-      background-color: honeydew;
     }
   }
 }
@@ -47,4 +46,15 @@ input {
   padding: 12px 12px 12px 12px;
   border: solid 1px #e0e0e0;
   border-radius: 2px;
+}
+::placeholder {
+  color: #bdbdbd;
+  font-size: 14px;
+}
+
+.form-title {
+  font-size: 14px;
+  font-weight: 550;
+  font-family: system-ui;
+  line-height: 1.4;
 }
