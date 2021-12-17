@@ -1,7 +1,7 @@
 import React from "react";
 import DropDown from "./dropDown/dropDown";
 import "./payment.scss";
-
+import data from "./dropDownData/data.json";
 const Payment = () => {
   return (
     <div className='payment-container'>
@@ -30,8 +30,8 @@ const Payment = () => {
             <input placeholder='*City' type='text' />
           </div>
           <div className='dropdown-section'>
-            <DropDown></DropDown>
-            <span>dropdown</span>
+            <DropDown data={data} title={"Country"}></DropDown>
+            <DropDown data={data} title={"Region/State"}></DropDown>
             <input type='text' />
           </div>
         </div>

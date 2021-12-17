@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./dropDown.scss";
-const DropDown = () => {
+const DropDown = ({ data, title }) => {
   const [open, setOpen] = useState(false);
 
   const openDropDown = (e) => {
@@ -23,12 +23,13 @@ const DropDown = () => {
       document.removeEventListener("mousedown", myshka);
     };
   }, [open]);
+
   const ref = useRef("");
   return (
     <div className='dropdown' onClick={openDropDown}>
       <div className='dropdown-button'>
         <div className='dropdown-title'>
-          <span>*Country</span>
+          <span>*{title}</span>
           <span className='dropdown-title-select'>Select</span>
         </div>
       </div>
@@ -44,22 +45,9 @@ const DropDown = () => {
       {open && (
         <div className='apie-mus-dropdown-all-levels'>
           <div className='apie-mus-first-level'>
-            <span className='with-icon'>Kaip veikia Vinted?</span>
-            <span>Programėlė</span>
-            <span>Pagalba</span>
-            <span>Aktualu</span>
-            <span>Programėlė</span>
-            <span>Pagalba</span>
-            <span>Aktualu</span>
-            <span>Programėlė</span>
-            <span>Pagalba</span>
-            <span>Aktualu</span>
-            <span>Programėlė</span>
-            <span>Pagalba</span>
-            <span>Aktualu</span>
-            <span>Programėlė</span>
-            <span>Pagalba</span>
-            <span>Aktualu</span>
+            {data.map((item, key) => (
+              <span key={key}>{item.countryName}</span>
+            ))}
           </div>
         </div>
       )}
