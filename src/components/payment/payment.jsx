@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import DropDown from "./dropDown/dropDown";
 import "./payment.scss";
 import data from "./dropDownData/data.json";
 const Payment = () => {
+  const [country, setCountry] = useState("");
+  const getCountry = (country) => {
+    setCountry(country);
+  };
   return (
     <div className='payment-container'>
       <div className='payment-title'> TITLE</div>
@@ -30,9 +34,15 @@ const Payment = () => {
             <input placeholder='*City' type='text' />
           </div>
           <div className='dropdown-section'>
-            <DropDown data={data} title={"Country"}></DropDown>
-            <DropDown data={data} title={"Region/State"}></DropDown>
-            <input type='text' />
+            <DropDown
+              data={data}
+              getCountry={getCountry}
+              title={"Country"}></DropDown>
+            <DropDown
+              data={data}
+              country={country}
+              title={"Region/State"}></DropDown>
+            <input placeholder='*Postal code' type='text' />
           </div>
         </div>
         <div>payment method is coming .... soon</div>

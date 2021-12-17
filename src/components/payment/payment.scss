@@ -47,6 +47,7 @@ input {
   padding: 12px 12px 12px 12px;
   border: solid 1px #e0e0e0;
   border-radius: 2px;
+  display: flex;
 }
 ::placeholder {
   color: #bdbdbd;
@@ -58,4 +59,7 @@ input {
   font-weight: 550;
   font-family: system-ui;
   line-height: 1.4;
+}
+div input {
+  display: flex;
 }
