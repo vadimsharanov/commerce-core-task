@@ -13,9 +13,6 @@
       display: flex;
       flex-direction: column;
       gap: 16px;
-      div {
-        display: flex;
-      }
       .customer-information-title {
         display: flex;
         flex-direction: column;
@@ -38,6 +35,10 @@
       }
     }
     .shipping-adress {
+      .dropdown-section {
+        display: flex;
+        gap: 20px;
+      }
     }
   }
 }

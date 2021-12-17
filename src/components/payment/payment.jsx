@@ -1,4 +1,5 @@
 import React from "react";
+import DropDown from "./dropDown/dropDown";
 import "./payment.scss";
 
 const Payment = () => {
@@ -28,8 +29,8 @@ const Payment = () => {
           <div>
             <input placeholder='*City' type='text' />
           </div>
-          <div>
-            <span>dropdown</span>
+          <div className='dropdown-section'>
+            <DropDown></DropDown>
             <span>dropdown</span>
             <input type='text' />
           </div>
