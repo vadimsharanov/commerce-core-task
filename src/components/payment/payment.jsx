@@ -42,7 +42,11 @@ const Payment = () => {
               data={data}
               country={country}
               title={"Region/State"}></DropDown>
-            <input placeholder='*Postal code' type='text' />
+            <input
+              className='postal-code-input'
+              placeholder='*Postal code'
+              type='text'
+            />
           </div>
         </div>
         <div>payment method is coming .... soon</div>
