@@ -16,7 +16,6 @@
         display: flex;
         flex-direction: column;
         gap: 5px;
-
         span {
           font-size: 12px;
           font-family: roboto;
@@ -42,6 +41,71 @@
         }
       }
     }
+    .payment-method {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      span {
+        font-size: 12px;
+        font-family: roboto;
+        line-height: 16px;
+        font-weight: 550;
+        color: #bdbdbd;
+        display: flex;
+        align-items: center;
+        i {
+          font-size: 18px;
+        }
+      }
+    }
+    .payment-box {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px;
+      background-color: #e0e0e0;
+      .payment-check {
+        display: flex;
+        justify-content: space-between;
+        .checkbox-container {
+          display: flex;
+          gap: 10px;
+          font-size: 14px;
+          align-items: center;
+          .checkbox {
+            height: 20px;
+            width: 20px;
+            border: solid 1px #dc624e;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            div {
+              background-color: #dc624e;
+              display: flex;
+              width: 15px;
+              height: 15px;
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+      .payment-inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .payment-card-number {
+          display: flex;
+        }
+        .payment-mm-cvv {
+          display: flex;
+          gap: 12px;
+          input {
+            width: 15%;
+          }
+        }
+      }
+    }
   }
 }
 input {
@@ -61,4 +125,5 @@ input {
   font-weight: 550;
   font-family: system-ui;
   line-height: 1.4;
+  display: flex;
 }

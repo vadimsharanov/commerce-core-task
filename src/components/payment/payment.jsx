@@ -3,6 +3,7 @@ import DropDown from "./dropDown/dropDown";
 import "./payment.scss";
 import data from "./dropDownData/data.json";
 const Payment = () => {
+  const trial = "trial";
   const [country, setCountry] = useState("");
   const getCountry = (country) => {
     setCountry(country);
@@ -49,7 +50,41 @@ const Payment = () => {
             />
           </div>
         </div>
-        <div>payment method is coming .... soon</div>
+        <div className='payment-method'>
+          <div className='form-title'>Payment Method </div>
+          <span>
+            <i className='fa fa-lock' aria-hidden='true'>
+              {" "}
+            </i>
+            &nbsp;
+            <span>All transactions are secure and encrypted</span>
+          </span>
+          <div className='payment-box'>
+            <div className='payment-check'>
+              <div className='checkbox-container'>
+                <div className='checkbox'>
+                  <div></div>
+                </div>
+                <div className='checkbox-text'>Credit Card</div>
+              </div>
+              <div>
+                <img
+                  src='https://lh3.googleusercontent.com/UZLln8OyyIlhbYwBFFyRWBPQmg_Tokhq0ypwwWEhej7lAjcIPKJqp-3pQ7qWkWUtI1VN=s170'
+                  alt=''
+                />
+              </div>
+            </div>
+            <div className='payment-inputs'>
+              <div className='payment-card-number'>
+                <input placeholder='Card number' type='text' />
+              </div>
+              <div className='payment-mm-cvv'>
+                <input placeholder='MM/YY' type='text' />
+                <input placeholder={`CVV ${trial}`} type='text' />
+              </div>
+            </div>
+          </div>
+        </div>
       </form>
     </div>
   );
