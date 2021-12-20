@@ -83,10 +83,13 @@
             div {
               background-color: #dc624e;
               display: flex;
-              width: 15px;
-              height: 15px;
+              width: 12px;
+              height: 12px;
               border-radius: 50%;
             }
+          }
+          .checkbox:hover {
+            cursor: pointer;
           }
         }
       }

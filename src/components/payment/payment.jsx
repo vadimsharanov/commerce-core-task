@@ -3,7 +3,6 @@ import DropDown from "./dropDown/dropDown";
 import "./payment.scss";
 import data from "./dropDownData/data.json";
 const Payment = () => {
-  const trial = "trial";
   const [country, setCountry] = useState("");
   const getCountry = (country) => {
     setCountry(country);
@@ -80,7 +79,10 @@ const Payment = () => {
               </div>
               <div className='payment-mm-cvv'>
                 <input placeholder='MM/YY' type='text' />
-                <input placeholder={`CVV ${trial}`} type='text' />
+                <input
+                  style={{ fontFamily: "FontAwesome" }}
+                  placeholder='CVV &emsp;   &#xf05a; '
+                />
               </div>
             </div>
           </div>
